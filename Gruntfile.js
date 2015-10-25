@@ -50,6 +50,10 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
+      css: {
+        files: ['<%= yeoman.app %>/styles/{,*/}*.{css}'],
+        tasks: ['compass:server', 'autoprefixer:server']
+      },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         tasks: ['compass:server', 'autoprefixer:server']
@@ -75,7 +79,8 @@ module.exports = function (grunt) {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
-        livereload: 35729
+        // livereload: 35729
+        livereload: false
       },
       livereload: {
         options: {
@@ -218,7 +223,7 @@ module.exports = function (grunt) {
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',
         fontsDir: '<%= yeoman.app %>/styles/fonts',
-        importPath: './bower_components',
+        importPath: '/bower_components',
         httpImagesPath: '/images',
         httpGeneratedImagesPath: '/images/generated',
         httpFontsPath: '/styles/fonts',
@@ -398,7 +403,10 @@ module.exports = function (grunt) {
             '*.html',
             'images/{,*/}*.{webp}',
             'scripts/*{,*/}*.{js,css,html}',
+            'views/**/*.html',
+            'styles/**/*.css',
             'styles/fonts/{,*/}*.*',
+            'api/**/*.{json,gcode,png,jpg,jpeg}',
             'bower_components/*{,*/}*.{js,css}'
           ]
         }, {
@@ -420,15 +428,15 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
-        'compass:server'
+        // 'compass:server'
       ],
       test: [
-        'compass'
+        // 'compass'
       ],
       dist: [
-        'compass:dist',
-        'imagemin',
-        'svgmin'
+        // 'compass:dist',
+        // 'imagemin',
+        // 'svgmin'
       ]
     },
 
