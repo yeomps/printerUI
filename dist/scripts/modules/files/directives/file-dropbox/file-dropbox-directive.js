@@ -46,7 +46,7 @@
 			'scope': {
                 uploadFile: "=ogFdUploadFile"
             },
-            'templateUrl': 'scripts/files/directives/file-dropbox/file-dropbox-template.html',
+            'templateUrl': 'scripts/modules/files/directives/file-dropbox/file-dropbox-template.html',
             'link': link
         };
 

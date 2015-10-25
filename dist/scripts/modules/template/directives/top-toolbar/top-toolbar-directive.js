@@ -49,7 +49,7 @@
             'scope': {
                 currentPageName: '=ogCurrentPageName'
             },
-            'templateUrl': 'scripts/template/directives/top-toolbar/top-toolbar-template.html',
+            'templateUrl': 'scripts/modules/template/directives/top-toolbar/top-toolbar-template.html',
             'link': link
         };
 

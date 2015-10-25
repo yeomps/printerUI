@@ -55,7 +55,7 @@
                 view:'@ogFslView',
                 hideEmpty:'=ogFslHideEmpty'
             },
-            'templateUrl': 'scripts/files/directives/file-search-list/file-search-list-template.html',
+            'templateUrl': 'scripts/modules/files/directives/file-search-list/file-search-list-template.html',
             'link': link
         };
 

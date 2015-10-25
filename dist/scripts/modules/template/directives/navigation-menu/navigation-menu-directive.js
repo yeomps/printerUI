@@ -33,7 +33,7 @@
             'scope': {
                 pages:'=nmPages'
             },
-            'templateUrl': 'scripts/template/directives/navigation-menu/navigation-menu-template.html',
+            'templateUrl': 'scripts/modules/template/directives/navigation-menu/navigation-menu-template.html',
             'link': link
         };
 

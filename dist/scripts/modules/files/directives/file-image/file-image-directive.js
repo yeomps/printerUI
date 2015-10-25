@@ -51,7 +51,7 @@
                 width: "=ogFiWidth",
                 circle: "@ogFiCircle"
             },
-            'templateUrl': 'scripts/files/directives/file-image/file-image-template.html',
+            'templateUrl': 'scripts/modules/files/directives/file-image/file-image-template.html',
             'link': link
         };
 

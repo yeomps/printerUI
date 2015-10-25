@@ -1,17 +1,22 @@
 <div>
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/directives/navigation-menu.css">
+  <!-- endbuild -->
+
     <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
                 md-component-id="left">
 
       <header class="nav-header">
-        <a ng-href="/" class="docs-logo">
-          <img src="http://www.re3d.org/old_site/wp-content/themes/re3d/img/logo2.png" alt="" />
-          <h1 class="docs-logotype md-heading">Open Gigabot</h1>
+        <a ng-href="/" class="doc-logo">
+          <img src="images/logo.png" alt="" />
+          <h1 class="doc-logotype md-heading">Open Gigabot</h1>
         </a>
       </header>
 
       <md-content flex role="navigation">
 
-        <md-list  class="docs-menu">
+        <md-list  class="doc-menu">
           <md-item ng-repeat="page in pages">
             <a href="/#/{{page.url}}">
               <md-item-content md-ink-ripple layout="row" layout-align="start center" ng-class="{active:isCurrentPageKey(page.url)}">
