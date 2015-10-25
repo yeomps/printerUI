@@ -11,7 +11,7 @@ Material Design Template Directives:
 
 Printer UI Directives:
 
-	_Files_
+_Files_
 
 	<og-file-search-list og-fsl-files="" 
 		                 og-fsl-hide-empty="" 
@@ -32,7 +32,7 @@ Printer UI Directives:
 	</og-gcode-viewer>
 
 
-	_Controls_
+_Controls_
 
 	<controls-cube cc-x-pos=""  
 				   cc-y-pos=""  
