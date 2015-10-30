@@ -7,12 +7,12 @@
 
     	var vm = this;
 
-
+	vm.printer = printerFactory;
 
     }
 
     angular
         .module('openGbApp')
-        .controller('fileController', ['$scope', '$http', 'printerFactory', controller ]);
+        .controller('printerController', ['$scope', '$http', 'printerFactory', controller ]);
 
 })(angular);    

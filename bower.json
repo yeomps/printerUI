@@ -15,7 +15,7 @@
     "ng-file-upload": "~7.2.1",
     "ng-file-upload-shim": "~7.2.1",
     "ng-lodash": "~0.2.3",
-    "ng-websocket": "~0.2.1"
+    "ng-websocket": "git://github.com/wilk/ng-websocket.git#master"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"
